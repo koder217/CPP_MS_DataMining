@@ -1,9 +1,9 @@
 # -------------------------------------------------------------------------
-# AUTHOR: your name
-# FILENAME: title of the source file
-# SPECIFICATION: description of the program
+# AUTHOR: Siva Charan Mallena
+# FILENAME: similarity.py
+# SPECIFICATION: Cosine Similarity exercise as part of assignment 1
 # FOR: CS 5990 (Advanced Data Mining) - Assignment #1
-# TIME SPENT: how long it took you to complete the assignment
+# TIME SPENT: ~1 hr
 # -----------------------------------------------------------*/
 
 # Importing some Python libraries
