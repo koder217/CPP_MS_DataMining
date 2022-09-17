@@ -69,7 +69,7 @@ best_match = []
 for id1, x in enumerate(matrix):
     for id2, y in enumerate(matrix):
         similarity = cosine_similarity([x], [y])[0][0]
-        print(id1, id2, similarity)
+        #print(id1, id2, similarity)
         if id1 != id2 and similarity > max_score:
             best_match = []
             best_match.append(id1+1)
