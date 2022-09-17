@@ -20,7 +20,7 @@ doc4 = "I do like soccer, my favorite sport in the olympic games"
 
 
 # Use the following words as terms to create your document matrix
-terms = ['soccer', 'my', 'favorite', 'sport', 'I', 'like', 'one', 'support', 'olympic', 'game']
+terms = ['soccer', 'my', 'favorite', 'sport', 'I', 'like', 'one', 'support', 'olympic', 'games']
 matrix = []
 def get_key_matrix(terms, doc):
     words = doc.split()
@@ -69,7 +69,8 @@ best_match = []
 for id1, x in enumerate(matrix):
     for id2, y in enumerate(matrix):
         similarity = cosine_similarity([x], [y])[0][0]
-        if similarity < 1.0 and similarity > max_score:
+        print(id1, id2, similarity)
+        if id1 != id2 and similarity > max_score:
             best_match = []
             best_match.append(id1+1)
             best_match.append(id2+1)
