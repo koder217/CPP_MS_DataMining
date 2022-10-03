@@ -41,10 +41,10 @@ doc2_vals = Counter(doc2Arr)
 doc3_vals = Counter(doc3Arr)
 doc4_vals = Counter(doc4Arr)
 
-# print(doc1_vals)
-# print(doc2_vals)
-# print(doc3_vals)
-# print(doc4_vals)
+print(doc1_vals)
+print(doc2_vals)
+print(doc3_vals)
+print(doc4_vals)
 
 words  = list(doc1_vals.keys() | doc2_vals.keys() | doc3_vals.keys() | doc4_vals.keys())
 d1_vect = [doc1_vals.get(word, 0) for word in words]       
