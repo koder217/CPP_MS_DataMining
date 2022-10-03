@@ -76,7 +76,7 @@ for ds in dataSets:
            class_predicted = clf.predict([transformed_test_instance])[0]
 
            #compare the prediction with the true label (located at data[3]) of the test instance to start calculating the model accuracy.
-           test_class_value = transformed_test_instance[3]
+           test_class_value = refund[data[3]]
            if class_predicted == 1 and test_class_value == 1:
                tp+=1
            elif class_predicted == 1 and test_class_value == 0:
