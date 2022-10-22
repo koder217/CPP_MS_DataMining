@@ -27,13 +27,15 @@ def discretize(instance):
 
 #reading the training data
 #--> add your Python code here
-training_df = pd.read_csv('weather_training.csv', nrows=11255) #works till 11255
+training_df = pd.read_csv('weather_training.csv')
 training_df.dropna(how="all")
 discrete_training_df = training_df.apply(discretize, axis = 1)
 
 # The columns that we will be making predictions with.
 y_training = np.array(discrete_training_df["Temperature (C)"])
+y_training = y_training.astype(dtype='int')
 X_training = np.array(discrete_training_df.drop(["Temperature (C)","Formatted Date"], axis=1).values)
+
 #reading the test data
 #--> add your Python code here
 test_df = pd.read_csv('weather_test.csv')
@@ -42,6 +44,7 @@ test_df.dropna(how="all")
 #update the test class values according to the discretization (11 values only)
 discrete_test_df = test_df.apply(discretize, axis = 1)
 y_test = discrete_test_df["Temperature (C)"]
+y_test = y_test.astype(dtype='int')
 X_test = discrete_test_df.drop(["Temperature (C)","Formatted Date"], axis=1).values
 
 
