@@ -1,9 +1,9 @@
 #-------------------------------------------------------------------------
-# AUTHOR: your name
-# FILENAME: title of the source file
-# SPECIFICATION: description of the program
+# AUTHOR: Siva Charan
+# FILENAME: bagging_random_forest.py
+# SPECIFICATION: Comparing ensemble methods
 # FOR: CS 5990- Assignment #4
-# TIME SPENT: how long it took you to complete the assignment
+# TIME SPENT: 4 hrs
 #-----------------------------------------------------------*/
 
 #importing some Python libraries
